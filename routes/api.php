@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\CategoriasController;
+use App\Http\Controllers\ClientesController;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::get('/categorias', [CategoriasController::class, 'index']);
+
+Route::prefix('/clientes')->group(function () {
+	Route::get('/', [ClientesController::class, 'index']);
+	Route::get('/{id}', [ClientesController::class, 'show']);
+	Route::post('/', [ClientesController::class, 'store']);
+	Route::put('/{id}', [ClientesController::class, 'update']);
+	Route::delete('/{id}', [ClientesController::class, 'destroy']);
 });
