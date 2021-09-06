@@ -7,15 +7,21 @@
 		<title>Clientes</title>
 
 		{{-- Bootstrap CSS --}}
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 		{{-- Bootstrap Icons --}}
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+		{{-- Fonts --}}
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+
+		{{-- CSS --}}
+		<link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 	</head>
 
 	<body class="d-flex flex-column h-100">
 		<header>
-			<nav class="navbar navbar-light bg-light">
+			<nav class="navbar navbar-light bg-custom">
 				<div class="container-fluid">
 					<a class="navbar-brand">{{ config('app.name') }}</a>
 				</div>
@@ -28,7 +34,7 @@
 
 		<footer class="footer mt-auto">
 			<p class="text-center">
-				Desenvolvido por <a href="https://www.linkedin.com/in/rafaeljack74/">Rafael Jack</a>
+				Desenvolvido por <a href="https://www.linkedin.com/in/rafaeljack74/" target="_blank">Rafael Jack</a>
 			</p>
 		</footer>
 

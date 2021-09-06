@@ -1,0 +1,63 @@
+/**********/
+/* Textos */
+/**********/
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+/**********/
+/* Navbar */
+/**********/
+
+.navbar-brand {
+	color: white !important;
+	font-weight: bold;
+}
+
+.bg-custom {
+	background-color: rgb(0, 17, 50);
+}
+
+/**********/
+/* Footer */
+/**********/
+
+footer {
+	padding-top: 20px;
+	background-color: #555;
+}
+
+footer p,
+footer a {
+	color: white;
+}
+
+footer a {
+	text-shadow: 0 0 7px #aaa;
+}
+
+footer a:hover {
+	color: yellow;
+}
+
+/*************/
+/* Paginação */
+/*************/
+
+.page-link {
+	color: #000;
+}
+
+.page-link:hover {
+	color: #444;
+}
+
+.page-item.active > .page-link {
+	background-color: #444;
+	border-color: #000;
+}
