@@ -13,13 +13,15 @@ Para o desenvolvimento desse projeto foram utilizados:
 # Executando a aplicação
 Após o clone do projeto, é necessário seguir os passos a seguir:
 
-1 - Crie uma cópia do arquivo *".env.example"* e salve-o como *".env"*. Edite o arquivo salvo informando as tags de conexão com o banco de dados.
->DB_CONNECTION=mysql
->DB_HOST=127.0.0.1
->DB_PORT=3306
->DB_DATABASE=laravel
->DB_USERNAME=root
->DB_PASSWORD=
+1 - Crie uma cópia do arquivo `.env.example` e salve-o como `.env`. Edite o arquivo salvo informando as tags de conexão com o banco de dados.
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
 2 - Salve e feche o arquivo. Agora instale as dependências do projeto através do **Composer**. Para isso, execute via CMD o comando abaixo no diretório do projeto.
 >composer install
