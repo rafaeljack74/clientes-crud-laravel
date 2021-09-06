@@ -24,19 +24,31 @@ DB_PASSWORD=
 ```
 
 2 - Salve e feche o arquivo. Agora instale as dependências do projeto através do **Composer**. Para isso, execute via CMD o comando abaixo no diretório do projeto.
->composer install
+```
+composer install
+```
 
 3 - Agora gere a chave da aplicação executando o comando abaixo:
->php artisan key:generate
+```
+php artisan key:generate
+```
 
 4 - Crie a estrutura de banco de dados executando as migrations.
->php artisan migrate
+```
+php artisan migrate
+```
 
 5 - Popule a tabela de **Categorias** executando o seeder.
->php artisan db:seed
+```
+php artisan db:seed
+```
 
 6 - Tudo pronto! Basta executar o comando abaixo e a aplicação estará acessível!
->php artisan serve
+```
+php artisan serve
+```
  
 Por padrão, o projeto é iniciado no endereço:
->http://localhost:8000
+```
+http://localhost:8000
+```
