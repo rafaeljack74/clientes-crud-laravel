@@ -19,7 +19,8 @@ class Categoria extends Model
 	/**
 	 * Retorna os clientes relacionados a categoria.
 	 */
-	public function clientes() {
+	public function clientes()
+	{
 		return $this->hasMany(Cliente::class);
 	}
 }

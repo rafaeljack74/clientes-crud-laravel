@@ -11,13 +11,17 @@ class ClientesController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * 
+	 * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+		$filtro = $request->input('filtro');
+
         return response([
-			'clientes' => Cliente::all()
+			'filtro' => $filtro,
+			'clientes' => Cliente::getList($filtro)
 		], 200);
     }
 
